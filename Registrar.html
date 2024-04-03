@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <link rel="icon" href="glob.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color:#ccc;
+
+
+        }
+
+        .label {
+            margin-left: 0%;
+
+        }
+
+        .inputbox {
+            width: 20vw;
+            height: 5vh;
+        }
+
+        .inputbox1 {
+            width: 43vw;
+            height: 5.5vh;
+        }
+
+        .inputbox2 {
+            width: 15vw;
+            height: 5.5vh;
+        }
+
+        .table {
+
+            margin-left: 30%;
+            margin-right: 30%;
+            row-gap: 40px;
+        }
+
+        .submit {
+            width: 9vw;
+            height: 7vh;
+            background-color: rgb(138, 138, 208);
+            color: white;
+
+        }
+
+        .span {
+            color: red;
+        }
+        
+       ul{
+        background-color: #0f4229;
+           width: 100%;
+           height: 55px;
+           padding: 0;
+           margin: -8px;
+           list-style-type: none;
+           position: fixed;
+          }
+          li{
+            float:left;
+           
+            }
+          li a{
+           
+           display:block;
+           text-align: center;
+           padding: 15px 20px;
+           color: white;
+           align-items: center;
+           text-decoration: none;
+         
+          }
+          #image{
+            width: 90px;
+            height:55px;
+          
+            float: left;
+          }
+          #home{
+            padding-left: 66%;
+          }
+          a:hover{
+            color:red;
+            background-color: white;
+            text-decoration: none;
+            border-radius: 10px;
+          }
+          ul {
+  margin-top:-1%;
+  background-color: #3cb37a;
+  width: 100%;
+  height: 55px;
+  list-style-type: none;
+  position: fixed;
+}
+
+li {
+  float: left;
+}
+
+li a {
+
+  display: block;
+  text-align: center;
+  padding: 15px 20px;
+  color: rgb(8, 0, 0);
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#about {
+  padding-left: 45%;
+}
+
+#icon {
+  float: left;
+  color: rgb(8, 0, 0);
+  font-size: x-large;
+  padding: 15px 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+          
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li id="icon">Start Your Work <i class="fa-solid fa-person-running"></i></li>
+        <li id="about"><a href="Home.html">Home</a></li>
+        <li ><a href="#">About </a></li>
+        <li><a href="#">Services</a></li>
+        
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <br><br><br><br>
+    <center>
+        <h2>Registration Form</h2>
+    </center>
+    <br><br>
+    <form>
+        <table class="table">
+            <tr>
+                <td>
+                    <label>First Name : <span class="span">*</span></label>
+                    <br>
+                    <input type="text" class="inputbox" placeholder="Enter your firstname" required>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <label>Last Name : <span class="span">*</span></label>
+                    <br>
+                    <input type="text" class="inputbox" placeholder="Enter your lastname" required>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <table class="table">
+            <tr>
+                <td>
+                    <label>Email : <span class="span">*</span></label>
+                    <br>
+                    <input type="text" class="inputbox1" placeholder="Enter your email" required>
+                </td>
+            </tr>
+        </table>
+        <br> <br>
+        <table class="table">
+            <tr>
+                <td>
+                    <label>Date Of Birth : <span class="span">*</span></label>
+                    <br>
+                    <input type="date" class="inputbox" required>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <label>BloodGroup :</label>
+                    <select class="inputbox">
+                        <option>---Select---</option>
+                        <option>O Positive</option>
+                        <option>O Negative</option>
+                        <option>A Positive</option>
+                        <option>A Negative</option>
+                        <option>B Positive</option>
+                        <option>B Negative</option>
+                        <option>AB Positive</option>
+                        <option>AB Negative</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br> <br>
+        <table class="table">
+
+            <tr>
+                <td>
+                    <label>Gender :</label><br>
+                    <input type="radio" name="fav_language">
+                     <label for="html">Male</label>
+                     <input type="radio" name="fav_language">
+                     <label for="css">Female</label>
+                    <input type="radio" name="fav_language">
+                    <label for="css">Other</label>
+                  <br><br>
+                </td>
+                
+              
+                </tr>
+               </table>
+               <table class="table">
+                <tr>
+                <td>
+                    <label>Mobile Number : <span class="span">*</span></label>
+                    <br>
+                    <input type="text" class="inputbox" placeholder="+91" required maxlength="10">
+                    <br><br>
+                </td>
+                <!-- <div data-mdb-input-init class="form-outline">
+                    <span class="input-group-text" >
+                      <img src="rose.jpg" alt="India Flag" width="20" height="auto" />&nbsp;+91<input type="tel" id="form6Example1" class="form-control" maxlength="10" required />
+                      <label class="form-label" for="form6Example1" style="padding-left: 15%; font-size: 100%; padding-top:2.5%;">Mobile Number*</label>
+                    </span>
+                  </div> -->
+                <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+                <td></td> <td></td>
+                
+                <td>
+                    <label>ID proof :</label><br>
+                    <input type="file">
+                </td>
+                </tr>
+                <tr>
+                  <td class="table">
+                    <label>State :</label><br>
+                    <select  class="inputbox">
+                        <option>---Select---</option>
+                        <option>Punjab</option>
+                        <option>Maharashtra</option>
+                        <option>Goa</option>
+                        <option>Bihar</option>
+                        <option>Chhattisgarh</option>
+                        <option>Mizoram</option>
+                        <option>Karnataka</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Tripura</option>
+                        <option>West Bengal</option>
+                        <option>Arunachal Pradesh</option>
+                        <option>Assam</option>
+                        <option>Manipur</option>
+                        <option>Gujarat</option>
+                        <option>Himachal Pradesh</option>
+                        <option>Haryana</option>
+                        <option>Odisha</option>
+                        <option>Nagaland</option>
+                        <option>Madhya Pradesh</option>
+                        <option>Tamil Nadu</option>
+                        <option>Rajasthan</option>
+                        <option>Meghalaya</option>
+                        <option>Telangana</option>
+                        <option>Kerala</option>
+                        <option>Jharkhand</option>
+                        <option>Uttar Pradesh</option>
+                        <option>Sikkim</option>
+                        <option>Uttarakhand</option>
+                        <option>Delhi</option>
+                        <option>Jammu & Kashmir</option>
+                    </select>
+                    <br><br>
+                  </td> 
+            </tr>
+        </table>
+        <table class="table">
+            <tr>
+                   <td>
+                    <label>Address : <span class="span">*</span></label>
+                    <br>
+                    <input type="text" class="inputbox" placeholder="Village" required>
+                    <br><br>
+                    </td>
+                     <td>
+                    <input type="text" class="inputbox" placeholder="Mandal" required>
+                </td>
+                <td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="text" class="inputbox" placeholder="District" required>
+                    <br>
+                </td>
+            
+                <td>
+                    <input type="text" class="inputbox" placeholder="Landmark" required>
+                    <br> 
+                </td>
+
+            </tr>
+        
+        </table>
+
+        <table class="table">
+            <tr>
+            <td>
+                  <br>  
+                <label>Resume :</label><br>
+                <input type="file">
+                <br><br>
+            </td>
+        </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" required>" I agree that I have carefully read and understood these Terms and Conditions"
+                    <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit" class="submit">
+                </td>
+                <td></td>
+                <td>
+                    <input type="reset" value="Reset" class="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+
+</html>
